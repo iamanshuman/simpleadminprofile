@@ -38,10 +38,11 @@
             android:id="@+id/cardView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/profileimg"
+            android:layout_margin="10dp"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="0dp"
             app:cardBackgroundColor="@android:color/transparent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -49,8 +50,10 @@
                 android:layout_height="match_parent">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:cropToPadding="true"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
@@ -59,6 +62,9 @@
                         android:id="@+id/imageView"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
+                        android:background="@drawable/profileimg"
+                        android:cropToPadding="true"
+                        android:padding="5dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/android"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +77,7 @@
                     android:layout_height="110dp"
                     android:layout_marginTop="75dp"
                     android:src="@drawable/anshuman"
-                    android:background="@drawable/profileimg"
+                    android:background="@drawable/profileimg1"
                     android:elevation="5dp"
                     android:cropToPadding="true"
                     android:padding="5dp"
@@ -83,16 +89,6 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="65dp"
-            android:elevation="10dp">
-
 
         </androidx.cardview.widget.CardView>
 
