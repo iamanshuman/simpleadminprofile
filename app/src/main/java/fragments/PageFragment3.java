@@ -15,7 +15,7 @@ import androidx.fragment.app.Fragment;
 
 public class PageFragment3 extends Fragment {
 
-    private ImageView img1, img2;
+    private ImageView img1, img2, img3;
 
     @Nullable
     @Override
@@ -28,19 +28,27 @@ public class PageFragment3 extends Fragment {
 
         img1 = rootView.findViewById(R.id.github);
         img2 = rootView.findViewById(R.id.linkedin);
+        img3 = rootView.findViewById(R.id.instagram);
 
 
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                open("https://github.com/iamanshuman");
+                open("");
             }
         });
 
         img2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                open("https://www.linkedin.com/in/anshuman-shekhar-0735231a6/");
+                open("");
+            }
+        });
+
+        img3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                open("https://www.instagram.com/_.rohitydv._/?hl=en");
             }
         });
 

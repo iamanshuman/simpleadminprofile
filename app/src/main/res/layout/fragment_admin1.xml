@@ -151,8 +151,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text2"
-                    android:layout_margin="5dp"
-                    android:text="Discription - I have designed the profile pages of of my Teammates where i have used some Image view some Text views to display the information in frontend and I have used viewpager to display the 5 admin fragments using sliders"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_centerInParent="true"
+                    android:text="Discription - I have designed the profile pages of my Teammates where i have used some Image view some Text views to display the information in frontend and I have used viewpager to display the 5 admin fragments using sliders"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="italic" />
@@ -164,8 +170,8 @@
     </RelativeLayout>
 
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
@@ -178,17 +184,24 @@
             android:id="@+id/github"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginRight="8dp"
+            android:layout_margin="4dp"
             android:scaleType="fitXY"
             android:src="@drawable/github" />
 
         <ImageView
-            android:id="@+id/linkedin"
+            android:id="@+id/instagram"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_toRightOf="@+id/github"
+            android:layout_margin="4dp"
             android:scaleType="fitXY"
-            android:src="@drawable/linkedin" />
-    </RelativeLayout>
+            android:src="@drawable/instagram" />
+
+        <ImageView
+        android:id="@+id/linkedin"
+        android:layout_width="30dp"
+        android:layout_height="30dp" android:layout_margin="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/linkedin" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

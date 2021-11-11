@@ -74,7 +74,7 @@
                     android:layout_width="110dp"
                     android:layout_height="110dp"
                     android:layout_marginTop="75dp"
-                    android:src="@drawable/anshuman"
+                    android:src="@drawable/rohityadav"
                     android:background="@drawable/profileimg1"
                     android:elevation="5dp"
                     android:cropToPadding="true"
@@ -113,7 +113,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="5dp"
-                    android:text="Name - Anshuman Shekhar"
+                    android:text="Name - Rohit Yadav"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="italic" />
@@ -123,8 +123,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text3"
-                    android:layout_margin="5dp"
-                    android:text="Enrollment number - 01614902020"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Enrollment number - 07614902020"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="italic" />
@@ -134,8 +139,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text1"
-                    android:layout_margin="5dp"
-                    android:text="Contribution - Developers Profile"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Contribution - Api"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="italic" />
@@ -146,7 +156,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text2"
                     android:layout_margin="5dp"
-                    android:text="Discription - I have designed the profile pages of of my Teammates where i have used some Image view some Text views to display the information in frontend and I have used viewpager to display the 5 admin fragments using sliders"
+                    android:text="Discription - I have made a ppt on API's"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="italic" />
@@ -157,7 +167,7 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -171,17 +181,25 @@
             android:id="@+id/github"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginRight="8dp"
+            android:layout_margin="4dp"
             android:scaleType="fitXY"
-            android:src="@drawable/github"/>
+            android:src="@drawable/github" />
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/instagram" />
 
         <ImageView
             android:id="@+id/linkedin"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_toRightOf="@+id/github"
+            android:layout_margin="4dp"
             android:scaleType="fitXY"
-            android:src="@drawable/linkedin"/>
-    </RelativeLayout>
+            android:src="@drawable/linkedin" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

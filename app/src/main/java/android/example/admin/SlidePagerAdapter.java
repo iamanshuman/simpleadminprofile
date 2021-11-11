@@ -17,12 +17,14 @@ public class SlidePagerAdapter extends FragmentStatePagerAdapter {
 
     @NonNull
     @Override
-    public Fragment getItem(int position) {
+    public Fragment getItem(int position)
+    {
         return fragmentList.get(position);
     }
 
     @Override
-    public int getCount() {
+    public int getCount()
+    {
         return fragmentList.size();
     }
 }
